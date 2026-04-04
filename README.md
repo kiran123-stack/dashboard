@@ -297,7 +297,7 @@ Example:
 
 ---
 
-# 📦 Technologies Used
+#  Technologies Used
 
 | Technology   | Purpose                     |
 | ------------ | --------------------------- |
