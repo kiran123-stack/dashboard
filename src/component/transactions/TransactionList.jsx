@@ -53,7 +53,7 @@ const TransactionList = () => {
           >
             {/* LEFT */}
             <div>
-              <h3 className="font-medium">{t.title}</h3>
+              <h3 className="text-black font-medium">{t.title}</h3>
               <p className="text-sm text-black">
                 {t.category} • {formatDate(t.date)}
               </p>
