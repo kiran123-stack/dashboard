@@ -18,7 +18,7 @@ const BalanceChart = () => {
 
   return (
     <div className="bg-white p-4 rounded-xl shadow m-4">
-      <h2 className="mb-4 font-semibold">Balance Trend</h2>
+      <h2 className="mb-4 text-black font-semibold">Balance Trend</h2>
 
       <ResponsiveContainer width="100%" height={250}>
         <LineChart data={data}>
