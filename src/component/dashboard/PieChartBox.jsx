@@ -28,7 +28,7 @@ const PieChartBox = () => {
 
   return (
     <div className="bg-white p-4 rounded-xl shadow m-4">
-      <h2 className="mb-4 font-semibold">Spending Breakdown</h2>
+      <h2 className="mb-4 text-black font-semibold">Spending Breakdown</h2>
 
       <ResponsiveContainer width="100%" height={250}>
         <PieChart>
