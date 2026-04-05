@@ -29,7 +29,7 @@ const SummaryCards = () => {
           className="bg-white rounded-2xl shadow-md p-4 flex flex-col justify-between"
         >
           <h2 className="text-sm text-gray-500">{card.title}</h2>
-          <p className="text-lg font-bold mt-2">
+          <p className="text-lg text-black font-bold mt-2">
             {formatCurrency(card.value)}
           </p>
         </div>
