@@ -15,12 +15,12 @@ const TransactionList = () => {
 
   const [editData, setEditData] = useState(null);
 
-  // ✏️ Handle Edit
+  //  Handle Edit
   const handleEdit = (transaction) => {
     setEditData(transaction);
   };
 
-  // 🔍 Filter Logic
+  //  Filter Logic
   const filteredTransactions = transactions.filter((t) => {
     return (
       t.title.toLowerCase().includes(filters.search.toLowerCase()) &&
@@ -35,16 +35,16 @@ const TransactionList = () => {
     <div className="p-4">
       <h2 className="text-lg font-semibold mb-4">Transactions</h2>
 
-      {/* ✏️ Edit Modal */}
+      {/*  Edit Modal */}
       <AddTransactionModal
         editData={editData}
         setEditData={setEditData}
       />
 
-      {/* 🔍 Filters */}
+      {/*  Filters */}
       <TransactionFilters onFilter={setFilters} />
 
-      {/* 📜 List */}
+      {/*  List */}
       <div className="space-y-3">
         {filteredTransactions.map((t) => (
           <div
@@ -62,7 +62,7 @@ const TransactionList = () => {
             {/* RIGHT */}
             <div className="flex items-center gap-3">
               
-              {/* 💰 Amount */}
+              {/*  Amount */}
               <div
                 className={`font-semibold ${
                   t.type === "income"
@@ -74,10 +74,10 @@ const TransactionList = () => {
                 {formatCurrency(t.amount)}
               </div>
 
-              {/* 🔐 Admin Controls */}
+              {/*  Admin Controls */}
               {userRole === "admin" && (
                 <>
-                  {/* ✏️ Edit */}
+                  {/* Edit */}
                   <button
                     onClick={() => handleEdit(t)}
                     className="px-2 py-1 text-xs bg-blue-500 hover:bg-blue-600 text-white rounded"
@@ -85,7 +85,7 @@ const TransactionList = () => {
                     Edit
                   </button>
 
-                  {/* ❌ Delete */}
+                  {/*  Delete */}
                   <button
                     onClick={() => deleteTransaction(t.id)}
                     className="px-2 py-1 text-xs bg-red-500 hover:bg-red-600 text-white rounded"
