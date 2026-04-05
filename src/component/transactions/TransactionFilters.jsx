@@ -15,7 +15,7 @@ const TransactionFilters = ({ onFilter }) => {
       <input
         type="text"
         placeholder="Search..."
-        className="border p-2 rounded w-full"
+        className="border text-black  p-2 rounded w-full"
         value={search}
         onChange={(e) => setSearch(e.target.value)}
       />
@@ -33,7 +33,7 @@ const TransactionFilters = ({ onFilter }) => {
       <input
         type="text"
         placeholder="Category"
-        className="border p-2 rounded w-full"
+        className="border text-black  p-2 rounded w-full"
         value={category}
         onChange={(e) => setCategory(e.target.value)}
       />
